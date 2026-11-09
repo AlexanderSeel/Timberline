@@ -1,0 +1,12 @@
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.glb binary
+*.blend binary
+*.fbx binary
+*.wav binary
+*.ogg binary
+*.md text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.mjs text eol=lf

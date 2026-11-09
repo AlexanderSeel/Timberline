@@ -1,0 +1,21 @@
+name: Validate Timberline
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate project and smoke tests
+        run: npm run verify
+      - name: Detect accidental credentials
+        shell: bash
+        run: |
+          if git ls-files | grep -E '(^|/)(\.env\.local|\.env\.production|.*\.pem|.*\.key)$'; then
+            echo 'Credential-like file committed'; exit 1
+          fi

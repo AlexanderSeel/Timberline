@@ -1,0 +1,14 @@
+{
+  "name": "timberline",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Timberline living-world survival and building game — Babylon.js prototype",
+  "scripts": {
+    "start": "node server.cjs",
+    "dev": "node server.cjs",
+    "check": "node scripts/check-project.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "verify": "npm run check && npm test"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,9 @@
+# Optional: merge into ~/.codex/config.toml or .codex/config.toml ONLY in a trusted project.
+# Do not commit local secrets here. Inspect and approve third-party server execution.
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+
+# Optional: requires Node >=20 and browser downloads. On Windows `cmd` with `/c` may be necessary.
+# [mcp_servers.playwright]
+# command = "npx"
+# args = ["-y", "@playwright/mcp@latest"]

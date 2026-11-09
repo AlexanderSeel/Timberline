@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "rules": ["External asset requires exact source, date, license, cost and approval status", "Never assume an external asset is CC0 from its platform alone", "Do not commit generated content until reviewed in the engine"],
+  "assets": [
+    {
+      "id": "timberline-original-procedural-materials",
+      "source": "Timberline original seeded Python generator",
+      "files": "assets/{dirt,wood,bark,stone,roof,grass}_{color.jpg,normal.png,roughness.png}",
+      "license": "original project content",
+      "authoring": "scripts/make_textures.py",
+      "provenance": "local procedural; no third-party source or credits",
+      "notes": "placeholders for scanned PBR assets; textures downsampled to 512x512 for repository footprint"
+    }
+  ]
+}
